@@ -1,24 +1,27 @@
-# ats-resume-generator
-python code to generate resume
+📝 ATS Resume Generator (Python)
+
+A Python project that automatically generates ATS-friendly resumes tailored to real job postings.
+It extracts job-specific keywords and formats resumes to optimize for Applicant Tracking Systems (ATS).
+
 🔹 Overview
 
-This Python project automatically generates ATS-friendly resumes tailored to real job postings. It:
+Scrapes job listings from websites like Indeed or LinkedIn
 
-Scrapes job listings from websites like Indeed or LinkedIn.
+Extracts keywords and requirements from job descriptions
 
-Extracts keywords and requirements from job descriptions.
+Generates Word (.docx) and PDF resumes
 
-Generates Word (.docx) and PDF resumes for each job.
+Optimizes resumes with proper sections, formatting, and keywords
 
-Optimizes resumes for Applicant Tracking Systems (ATS) with proper formatting, keywords, and sections.
+Randomized but realistic data using Faker
 
-🔹 Features
+✨ Features
 
-Generates 100+ resumes automatically.
+Generates 100+ resumes automatically
 
-Creates role-specific resumes based on scraped job postings.
+Role-specific resumes based on job postings
 
-Includes key ATS-friendly sections:
+ATS-friendly sections included:
 
 Contact Information
 
@@ -30,90 +33,99 @@ Experience
 
 Education
 
-Converts Word resumes to PDF format.
+Converts Word resumes to PDF format
 
-Randomized but realistic data using Faker for names, emails, phone numbers, and education.
+Randomized names, emails, phone numbers, and education using Faker
 
-🔹 Prerequisites
+🧩 Prerequisites
 
-Python 3.10+ recommended.
+Python 3.10+ recommended
 
-Required Python libraries:
+Install required libraries:
 
 pip install requests beautifulsoup4 python-docx fpdf pandas faker docx2pdf
 
 
-requests – For HTTP requests to fetch job postings.
+Library Purposes:
 
-beautifulsoup4 – To parse HTML and extract job data.
+requests – Fetch job postings
 
-python-docx – To create Word documents.
+beautifulsoup4 – Parse HTML and extract job data
 
-docx2pdf – To convert Word documents to PDF.
+python-docx – Create Word documents
 
-fpdf – Optional for PDF conversion.
+docx2pdf – Convert Word to PDF
 
-pandas – For CSV data handling (job roles/keywords).
+fpdf – Optional PDF conversion
 
-faker – To generate random realistic data.
+pandas – CSV handling (job roles/keywords)
 
-🔹 File Structure
+faker – Generate realistic random data
+
+📂 File Structure
 ATS_Resume_Generator/
 │
 ├── job_roles_keywords.csv     # CSV with roles and ATS keywords
 ├── main.py                    # Python script to generate resumes
-├── ATS_Resumes/               # Folder where generated resumes are saved
+├── ATS_Resumes/               # Folder for generated resumes
 │    ├── Resume_1_Software_Engineer.docx
 │    ├── Resume_1_Software_Engineer.pdf
 │    └── ...
 └── README.md
 
-🔹 CSV File Format
+🗂️ CSV File Format
 
-job_roles_keywords.csv – defines job roles and keywords:
+job_roles_keywords.csv defines job roles and keywords:
 
 Role	Keyword1	Keyword2	Keyword3	Keyword4	Keyword5
 Software Engineer	Python	Java	Git	Agile	REST API
 Data Analyst	SQL	Excel	Tableau	Analytics	Power BI
 Project Manager	Project Mgmt	Scrum	Leadership	Agile	Stakeholder
 
-Role column is mandatory.
+Role column is mandatory
 
-Keywords columns are optional, but recommended for ATS optimization.
+Keyword columns are optional but recommended for ATS optimization
 
-🔹 Usage
+⚙️ Usage
 
-Update CSV: Add the job roles and relevant ATS keywords.
+Update CSV: Add job roles and relevant ATS keywords
 
 Run the script:
 
 python main.py
 
 
-Resumes Output: All resumes are saved in the ATS_Resumes/ folder in both .docx and .pdf formats.
+Output:
+All resumes are saved in ATS_Resumes/ in both .docx and .pdf formats
 
-Customization: You can adjust:
+Customizable Options:
 
-Number of resumes generated.
+Number of resumes generated
 
-Skills, experience, or education templates.
+Skills, experience, or education templates
 
-Job scraping source URL.
+Job scraping source URL
 
-🔹 Notes
+⚠️ Notes
 
-Scraping job portals may require handling dynamic content (JavaScript). For LinkedIn or advanced websites, consider Selenium or official APIs.
+Scraping job portals may require handling dynamic content (JavaScript).
+
+For LinkedIn or advanced websites, consider Selenium or official APIs.
 
 Ensure legal compliance while scraping and using job postings.
 
-The generated resumes are template-based, but realistic enough for ATS testing and demonstrations.
+Generated resumes are template-based but realistic enough for ATS testing.
 
-🔹 Future Enhancements
+🔮 Future Enhancements
 
-Automatically extract keywords from live job postings for more accurate resume tailoring.
+Automatically extract keywords from live job postings for accurate tailoring
 
-Include cover letter generation.
+Cover letter generation
 
-Integrate with a web interface for one-click resume creation.
+Web interface for one-click resume creation
 
-Add multi-language support (English + Hindi + Local Languages).
+Multi-language support (English + Hindi + Local Languages)
+
+🏷️ Tags
+
+#python #resume #ATS #automation #job #docx #pdf #faker #scraping #career
