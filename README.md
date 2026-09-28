@@ -24,7 +24,7 @@ Role-specific resumes based on job postings
 ATS-friendly sections included:
 
 Contact Information
-
+...
 Professional Summary
 
 Skills
