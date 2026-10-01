@@ -31,7 +31,7 @@ Skills
 
 Experience
 
-Education
+Education.   
 
 Converts Word resumes to PDF format
 
